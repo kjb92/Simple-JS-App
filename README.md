@@ -1,4 +1,4 @@
-# Simple-JS-App
+# simple-js-app
 
 ## Project Description
 ### Objective
