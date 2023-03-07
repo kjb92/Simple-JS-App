@@ -5,8 +5,11 @@ data from an external API and enables the viewing of data points in detail.
 
 
 # How to get the project running
+To be written
 
 # Project dependencies 
-(e.g., JavaScript version, ESLint rules)
+<!-- (e.g., JavaScript version, ESLint rules) -->
+To be written
 
 # Which API the project uses
+To be written
