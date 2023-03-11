@@ -48,7 +48,10 @@ p {
     font-size: 16px;
     line-height: 1.6;
 }
-   
+
+.fs14 {
+    font-size: 14px;
+}
 
 
 /* LINK */
