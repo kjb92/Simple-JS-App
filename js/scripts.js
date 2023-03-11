@@ -51,10 +51,10 @@ let big = 1.5
 
 for (let i=0; i<pokemonList.length; i++){
     if (pokemonList[i].height >= big){
-        document.write("<p>" + pokemonList[i].name + " (height: " + pokemonList[i].height + ") -> <b>Wow, that's big!</b></p>");
+        document.write("<p>" + pokemonList[i].name + " (height: " + pokemonList[i].height + " m) -> <b>Wow, that's big!</b></p>");
     }
     else {
-        document.write("<p>" + pokemonList[i].name + " (height: " + pokemonList[i].height + ")</p>");
+        document.write("<p>" + pokemonList[i].name + " (height: " + pokemonList[i].height + " m)</p>");
     } 
 }
 
