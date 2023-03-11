@@ -153,15 +153,15 @@ a:hover, a:focus {
 
 /* ELEMENTS*/
 header {
-    background-color:aqua;
+    background-color:antiquewhite;
 }
 
 main {
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 footer {
-    background-color: aqua;
+    background-color: antiquewhite;
 }
 
 .logo {
