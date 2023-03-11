@@ -76,11 +76,19 @@ a:hover, a:focus {
      height: 70px;
 }
     
-    
-.h100pC {
-     height: 100%;
+
+.hAuto {
+    height: auto;
 }
-    
+
+.h100pC {
+    height: 100%;
+}
+
+.wAuto {
+    width: auto;
+}
+
 .w100pC {
     width: 100%;
 }
@@ -156,3 +164,7 @@ footer {
     background-color: aqua;
 }
 
+.logo {
+    width: auto;
+    height: 30px;
+}
