@@ -73,6 +73,22 @@ a:hover, a:focus {
 }
 
 
+/* BUTTON */
+
+button {
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
 
 
 /* GENERAL STYLES*/
