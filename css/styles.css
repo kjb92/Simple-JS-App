@@ -50,9 +50,6 @@ p {
     line-height: 1.6;
 }
 
-.fs14 {
-    font-size: 14px;
-}
 
 
 /* LINK */
@@ -73,7 +70,7 @@ a:hover, a:focus {
 }
 
 
-/* BUTTON */
+/* BUTTONS */
 
 button {
     all: unset;
@@ -82,11 +79,17 @@ button {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
+    padding: 16px 32px;
+    margin: 4px 2px;
 }
 
 .button-primary {
     background-color: var(--primary-color);
     color: var(--white);
+}
+
+.button-primary:hover {
+    background-color: var(--secondary-color);
 }
 
 
@@ -127,7 +130,9 @@ button {
     list-style-type: none;
 }
 
-
+.fs14 {
+    font-size: 14px;
+}
 
 
 
