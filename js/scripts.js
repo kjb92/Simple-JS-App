@@ -65,20 +65,30 @@ let pokemonRepository = (function () {
         } 
       }
 
-      function addListItem(pokemon){
+    function addListItem(pokemon){
         let pokemonList = document.querySelector('.pokemon-list');
         let listPokemonItem = document.createElement('li');
         let button = document.createElement('button');
         button.innerText = pokemon.name;
         button.classList.add('button-primary');
+        button.addEventListener('click', function(){
+            showDetails(pokemon)
+        });
         listPokemonItem.appendChild(button);
         pokemonList.appendChild(listPokemonItem);
-      }
+    }
   
+    function showDetails(pokemon){
+        console.log(pokemon.name);
+    }
+
+
+
     return {
       getAll,
       add,
-      addListItem
+      addListItem,
+      showDetails
     }
                       
   })();
