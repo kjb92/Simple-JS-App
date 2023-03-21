@@ -52,9 +52,18 @@ let pokemonRepository = (function () {
       return pokemonList;
     }
   
-    function add () {
-      pokemonList.push(pokemon);
-    }
+    function add (pokemon) {
+        if (
+          typeof pokemon === 'object' &&
+          'name' in pokemon && 
+          'height' in pokemon && 
+          'types' in pokemon 
+        ) {
+          pokemonList.push(pokemon);
+        } else {
+          alert("Method not allowed! Make sure the pokemon you want to add is an <object> datatype");
+        } 
+      }
   
     return {
       getAll,
@@ -76,3 +85,4 @@ function printAllPokemons (pokemon){
 }
 
  pokemonRepository.getAll().forEach(printAllPokemons);
+ 
