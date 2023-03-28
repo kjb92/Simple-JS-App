@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simple JS App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
@@ -26,7 +27,7 @@
           <div class="modal__overlay">
             <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
               <header class="modal__header row">
-                <h2 class="modal__title" id="modal-1-title"></h2>
+                <h2 class="modal__title capitalize" id="modal-1-title"></h2>
                 <button class="modal__close" aria-label="Close modal"></button>
               </header>
               <main class="modal__content" id="modal-1-content">
@@ -43,11 +44,16 @@
         </div>
       
         <main class="flex column p20 flex--grow flex--shrink flex--baseMax">
-        <h1>Welcome</h1>
+        <h1>Pokedex</h1>
+
+        <div class="search-container">
+          <input type="text" id="input__search-pokemons" onkeyup="searchPokemons()" placeholder="Search for pokemon...">
+        </div>
+
         <div class="flex column loading-message hidden">
           <p>Loading...</p>
         </div>
-        <ul class="pokemon-list list--none">
+        <ul class="pokemon-list list--none" id="pokemon-list">
         </ul>
 
         <script src="js/promise-polyfill.js"></script>

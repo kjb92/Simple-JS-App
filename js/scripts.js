@@ -23,6 +23,7 @@ let pokemonRepository = (function () {
         let pokemonList = document.querySelector('.pokemon-list');
         let listPokemonItem = document.createElement('li');
         let button = document.createElement('button');
+        button.classList.add('capitalize', 'flex');
         button.innerText = pokemon.name;
         button.classList.add('button-primary');
         button.addEventListener('click', function(){
@@ -138,6 +139,25 @@ let pokemonRepository = (function () {
     };
                       
 })();
+
+
+function searchPokemons() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.querySelector('#input__search-pokemons');
+  filter = input.value.toUpperCase();
+  ul = document.querySelector('#pokemon-list');
+  li = ul.querySelectorAll('li');
+
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("button")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
 
 pokemonRepository.loadList().then(function() {
     // Now the data is loaded!

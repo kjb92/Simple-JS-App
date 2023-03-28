@@ -1,4 +1,7 @@
-/* VARIABLES*/
+/**************************\
+Variables
+\**************************/
+
 :root {
     --primary-color: #357b70;
     --primary-color-link-visited: #05676e;
@@ -10,14 +13,19 @@
 }
   
   
-/* ALL ELEMENTS*/
+/**************************\
+ALL Elements
+\**************************/
+
 * {
     box-sizing: border-box;
 }
   
 
 
-/* HTML & BODY */
+/**************************\
+HTLM & Body
+\**************************/
 
 body {
     font-family: 'Lato', sans-serif;
@@ -27,7 +35,10 @@ body {
 
 
 
-/* HEADINGS & PARAGRAPH*/
+/**************************\
+Headings & Paragraphs
+\**************************/
+
 h1 {
     font-size: 30px;
     font-weight: 700;
@@ -52,7 +63,10 @@ p {
 
 
 
-/* LINK */
+/**************************\
+Links
+\**************************/
+
 a {
     color: var(--primary-color);
 }
@@ -70,11 +84,16 @@ a:hover, a:focus {
 }
 
 
-/* BUTTONS */
+/**************************\
+Buttons
+\**************************/
+
+li {
+    display: flex;
+}
 
 button {
     all: unset;
-    display: inline-block;
     cursor: pointer;
     text-align: center;
     font-size: 16px;
@@ -83,18 +102,25 @@ button {
     margin: 4px 2px;
 }
 
+
 .button-primary {
-    background-color: var(--primary-color);
-    color: var(--white);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .button-primary:hover {
     background-color: var(--secondary-color);
+    color: var(--white);
 }
 
 
 
-/* GENERAL STYLES*/
+/**************************\
+  General Styles
+\**************************/
+
 .h70px {
      height: 70px;
 }
@@ -127,6 +153,7 @@ button {
 }
 
 .list--none {
+    all: unset;
     list-style-type: none;
 }
 
@@ -134,12 +161,19 @@ button {
     font-size: 14px;
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
 
 
 
-/* FLEX-BOX STYLES*/
+/**************************\
+  Flex-Box Styles
+\**************************/
+
 .flex {
     display: flex;
+    flex: 1;
 }
 
 .column {
@@ -176,9 +210,13 @@ button {
     
 
 
-/* ELEMENTS*/
+/**************************\
+  Elements
+\**************************/
+
 header {
     background-color:antiquewhite;
+    max-height: 70px;
 }
 
 main {
@@ -187,6 +225,7 @@ main {
 
 footer {
     background-color: antiquewhite;
+    max-height: 70px;
 }
 
 .logo {
@@ -197,6 +236,24 @@ footer {
 .hidden {
     display: none;
 }
+
+.search-container {
+    display: flex;
+    margin: 20px 0px;
+}
+
+#input__search-pokemons {
+    all: unset;
+    background-image: url("/img/64px-Search_Icon.png"); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+
 
 
 /**************************\
@@ -242,14 +299,10 @@ footer {
   .modal__title {
     margin-top: 0;
     margin-bottom: 0;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 2;
-    color: #00449e;
-    box-sizing: border-box;
   }
   
   .modal__close {
+    all: unset;
     background: transparent;
     border: 0;
   }
