@@ -21,13 +21,35 @@
             </ul>
         </nav>
       </header>
-      <main class="flex column p20 flex--grow flex--shrink flex--baseMax">
+        <!-- MODAL -->
+        <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+          <div class="modal__overlay">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+              <header class="modal__header row">
+                <h2 class="modal__title" id="modal-1-title"></h2>
+                <button class="modal__close" aria-label="Close modal"></button>
+              </header>
+              <main class="modal__content" id="modal-1-content">
+              <!-- MODAL-CONTENT CREATED VIA JAVASCRIPT -->
+                <div class="flex row detail__header">
+                  <image src="" class="detail__image"></image>
+                  <div class=" flex column flex--grow flex--shrink detail__stats p20"></div>
+                </div>
+              </main>
+              <footer class="modal__footer">
+              </footer>
+            </div>
+          </div>
+        </div>
+      
+        <main class="flex column p20 flex--grow flex--shrink flex--baseMax">
         <h1>Welcome</h1>
         <div class="flex column loading-message hidden">
           <p>Loading...</p>
         </div>
         <ul class="pokemon-list list--none">
         </ul>
+
         <script src="js/promise-polyfill.js"></script>
         <script src="js/fetch-polyfill"></script>
         <script src="js/scripts.js"></script>
