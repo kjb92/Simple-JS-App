@@ -92,9 +92,6 @@ let pokemonRepository = (function () {
                       
 })();
 
-
-let big = 1.5
-
 pokemonRepository.loadList().then(function() {
     // Now the data is loaded!
     pokemonRepository.getAll().forEach(function(pokemon){
