@@ -7,8 +7,8 @@ data from an external API and enables the viewing of data points in detail.
 
 
 ## How to get the project running
-A) Use the Pokédex hosted on my GitHub account through this link: https://kjb92.github.io/simple-js-app/ 
-B) Download all files and initiate 'index.html' locally
+Use the Pokédex hosted on my GitHub account through this link: https://kjb92.github.io/simple-js-app/ 
+OR download all files and initiate 'index.html' locally
 
 ## Features
 1. Browse through the list of Pokémons or directky search for a Pokémon's name with the help of the search bar
