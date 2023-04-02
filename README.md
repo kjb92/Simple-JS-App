@@ -1,4 +1,4 @@
-# simple-js-app
+# Pokédex - A Simple JS App
 
 ## Project Description
 ### Objective
@@ -7,11 +7,15 @@ data from an external API and enables the viewing of data points in detail.
 
 
 ## How to get the project running
-To be written
+A) Use the Pokédex hosted on my GitHub account through this link: https://kjb92.github.io/simple-js-app/ 
+B) Download all files and initiate 'index.html' locally
+
+## Features
+1. Browse through the list of Pokémons or directky search for a Pokémon's name with the help of the search bar
+2. Click on any Pokémon to get details on how it looks, its height as well as types
 
 ## Project dependencies 
-<!-- (e.g., JavaScript version, ESLint rules) -->
-To be written
+HTML5, CSS3, JavaScript
 
 ## Which API the project uses
-To be written
+This project pulls data from https://pokeapi.co/ 
