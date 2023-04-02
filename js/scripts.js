@@ -103,8 +103,8 @@ let pokemonRepository = (function () {
       let detailTypes = document.createElement('p');
       detailTypes.innerText = 'Types: ' + pokemon.types;
       detailStats.appendChild(detailTypes);
-
-      
+    
+  
       //enable to close modal via X
       modal.querySelector('.modal__close').addEventListener('click', hideModal);
 

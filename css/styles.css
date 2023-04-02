@@ -280,8 +280,8 @@ footer {
   .modal__container {
     background-color: #fff;
     padding: 30px;
-    width: 100%;
-    min-height: 70%;
+    max-width: 800px;
+    min-height: 50%;
     border-radius: 4px;
     overflow-y: auto;
     box-sizing: border-box;
@@ -303,6 +303,7 @@ footer {
     all: unset;
     background: transparent;
     border: 0;
+    cursor: pointer;
   }
   
   .modal__header .modal__close:before { content: "\2715"; }
