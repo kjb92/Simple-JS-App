@@ -15,7 +15,7 @@ OR download all files and initiate 'index.html' locally
 2. Click on 'See Profile' to get details on a Pokémon's looks, its height as well as types and abilities
 
 ## Project dependencies 
-HTML5, CSS3, JavaScript, Bootstrap 4.3.1
+HTML5, CSS3, JavaScript ES6, Bootstrap 4.3.1
 
 ## Which API the project uses
 This project pulls data from https://pokeapi.co/ 
